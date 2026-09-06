@@ -1,0 +1,46 @@
+name: "🕸️ Herramienta abandonada / Abandoned tool"
+description: "Reporta una herramienta de la lista que lleva más de 12 meses sin actividad. / Report a listed tool with no activity for over 12 months."
+title: "[Abandonada] "
+labels: ["en-observacion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No borramos herramientas de inmediato: las movemos a la sección "En observación" con la fecha, por si solo están en pausa. `scripts/check.py` hace esta comprobación automáticamente para repos de GitHub, pero puedes reportarla manualmente aquí también.
+
+        We don't delete tools immediately: we move them to the "Under review" section with a date, in case they're just paused. `scripts/check.py` checks this automatically for GitHub repos, but you can also report it manually here.
+  - type: input
+    id: nombre
+    attributes:
+      label: "Nombre de la herramienta / Tool name"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: "URL (repositorio o sitio) / URL (repo or site)"
+    validations:
+      required: true
+  - type: input
+    id: sistema
+    attributes:
+      label: "Sistema / sección donde aparece / System / section where it appears"
+    validations:
+      required: true
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: "¿Cómo verificaste la falta de actividad? / How did you verify the lack of activity?"
+      placeholder: "Ej: último commit/release hace 14 meses, la app ya no está en la tienda, el sitio no responde..."
+    validations:
+      required: true
+  - type: dropdown
+    id: accion
+    attributes:
+      label: "Acción sugerida / Suggested action"
+      options:
+        - "Mover a «En observación» / Move to \"Under review\""
+        - "Eliminar de la lista (justificar por qué) / Remove from the list (explain why)"
+        - "Reemplazar por otra herramienta similar / Replace with a similar tool"
+    validations:
+      required: true

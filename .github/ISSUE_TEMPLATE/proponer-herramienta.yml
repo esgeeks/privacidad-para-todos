@@ -1,0 +1,116 @@
+name: "🔧 Proponer herramienta / Propose a tool"
+description: "Sugiere una herramienta de privacidad que falta en la lista. / Suggest a privacy tool missing from the list."
+title: "[Herramienta] "
+labels: ["nueva-herramienta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por proponer una herramienta. Antes de enviar, revisa el criterio de entrada en [CONTRIBUTING.md](../../CONTRIBUTING.md): sin root/jailbreak, mantenida en los últimos 12 meses, gratuita (o con versión gratuita real y usable), y que proteja el propio dispositivo (nada de pentesting, OSINT sobre terceros, exploits o hacking de redes/cuentas ajenas).
+
+        Thanks for proposing a tool. Before submitting, check the entry criteria in [CONTRIBUTING.md](../../CONTRIBUTING.md): no root/jailbreak, maintained within the last 12 months, free (or with a real usable free tier), and it must protect the user's own device (no pentesting, offensive OSINT, exploits, or hacking other people's networks/accounts).
+  - type: input
+    id: nombre
+    attributes:
+      label: "Nombre de la herramienta / Tool name"
+      placeholder: "Ej: TrackerControl"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: "URL oficial (sitio o repositorio) / Official URL (site or repo)"
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: dropdown
+    id: sistema
+    attributes:
+      label: "Sistema / System"
+      multiple: true
+      options:
+        - Android
+        - iPhone / iOS
+        - Windows
+        - macOS
+        - Linux
+        - Multiplataforma / Cross-platform
+    validations:
+      required: true
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: "Categoría / Category"
+      options:
+        - Rastreadores / Trackers
+        - Telemetría / Telemetry
+        - Permisos / Permissions
+        - Spyware
+        - Firewall / DNS
+        - Metadatos / Metadata
+        - Navegador / Browser
+        - Mensajería / Messaging
+        - Contraseñas y 2FA / Passwords and 2FA
+        - Correo y alias / Email and aliasing
+        - Borrar rastro / Erasing traces
+    validations:
+      required: true
+  - type: textarea
+    id: que-hace
+    attributes:
+      label: "¿Qué hace? (una frase, sin marketing) / What does it do? (one sentence, no marketing)"
+    validations:
+      required: true
+  - type: input
+    id: instalacion
+    attributes:
+      label: "Cómo se instala / How to install"
+      placeholder: "Ej: F-Droid, App Store, .deb/.rpm, script..."
+    validations:
+      required: true
+  - type: dropdown
+    id: espanol
+    attributes:
+      label: "¿Interfaz en español? / Spanish UI?"
+      options:
+        - "Sí / Yes"
+        - "No"
+        - "Parcial / Partial"
+    validations:
+      required: true
+  - type: input
+    id: licencia
+    attributes:
+      label: "Licencia / License"
+      placeholder: "Ej: GPL-3.0, MIT, Propietaria/Proprietary..."
+    validations:
+      required: true
+  - type: input
+    id: ultima-actualizacion
+    attributes:
+      label: "Última actualización verificada (fecha o versión) / Last verified update (date or version)"
+      placeholder: "Ej: 2026-08 o v2.1.0 — no inventes una fecha aproximada / don't guess a date"
+    validations:
+      required: true
+  - type: dropdown
+    id: nivel
+    attributes:
+      label: "Nivel / Level"
+      options:
+        - Principiante / Beginner
+        - Intermedio / Intermediate
+    validations:
+      required: true
+  - type: checkboxes
+    id: criterio
+    attributes:
+      label: "Confirmo que la herramienta cumple / I confirm the tool meets"
+      options:
+        - label: "No requiere root, jailbreak ni compilar código. / Doesn't require root, jailbreak, or compiling code."
+          required: true
+        - label: "Está mantenida (actividad en los últimos 12 meses). / It's maintained (activity within the last 12 months)."
+          required: true
+        - label: "Es gratuita o tiene una versión gratuita real y usable. / It's free or has a real, usable free tier."
+          required: true
+        - label: "Protege el propio dispositivo — no es una herramienta de pentesting, OSINT ofensivo, exploits, ni de hacking de redes/cuentas ajenas. / It protects the user's own device — it's not a pentesting, offensive OSINT, exploit, or network/account-hacking tool."
+          required: true
