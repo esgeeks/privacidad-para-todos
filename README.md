@@ -10,7 +10,7 @@ Está pensada para alguien sin conocimientos técnicos que quiere dejar de regal
 
 Este repo es el complemento vivo del manual **Anonimato Platino**: el manual te enseña el método (qué ajustar, en qué orden, por qué importa cada paso) y este repositorio lleva la lista de herramientas, que cambia cada pocos meses. Así no te quedas con una guía desactualizada en un PDF fijo.
 
-👉 [ALEXIS: URL de la landing]
+👉 [Anonimato Platino](https://esgeeks.com/anonimato-platino/)
 
 ## Cómo usar esta lista
 
@@ -436,7 +436,7 @@ Herramientas que en algún momento cumplieron el criterio pero cuyo repositorio 
 
 Este repositorio se actualiza, pero **el manual Anonimato Platino** te explica el por qué de cada ajuste y en qué orden hacerlos, paso a paso.
 
-👉 [ALEXIS: URL de la landing]
+👉 [Anonimato Platino](https://esgeeks.com/anonimato-platino/)
 
 ## Licencia y créditos
 

@@ -10,7 +10,7 @@ Built for someone with no technical background who wants to stop giving away the
 
 This repo is the living companion to the **Anonimato Platino** manual: the manual teaches you the method (what to change, in what order, why each step matters), and this repository carries the list of tools, which changes every few months. That way you're not stuck with an outdated PDF guide.
 
-👉 [ALEXIS: landing page URL]
+👉 [Anonimato Platino](https://esgeeks.com/anonimato-platino/)
 
 ## How to use this list
 
@@ -436,7 +436,7 @@ Tools that once met the entry criteria but whose GitHub repository has shown no 
 
 This repository gets updated, but **the Anonimato Platino manual** explains the why behind every setting and the order to do them in, step by step.
 
-👉 [ALEXIS: landing page URL]
+👉 [Anonimato Platino](https://esgeeks.com/anonimato-platino/)
 
 ## License and credits
 
