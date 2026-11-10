@@ -208,6 +208,7 @@ This repo is the living companion to the **Anonimato Platino** manual: the manua
 | [ExifCleaner](https://github.com/szTheory/exifcleaner) | GUI app to remove metadata (EXIF, GPS, etc.) from photos, videos and PDFs via drag-and-drop. | Download portable `.exe` or installer | No | MIT | 2025-2026 (no exact date) | Beginner |
 | [BleachBit](https://www.bleachbit.org) | Cleans caches, logs, histories and app/system metadata securely. | Installer or portable | Yes | GPL-3.0 | Jul-Sep 2026 (v6.0.x) | Beginner |
 | [MetaPurge](https://github.com/XORD-AI/MetaPurge) | Sanitizes EXIF, PDF metadata and timestamps on Windows (portable). | Portable ZIP | No | MIT | 2025-2026 (no exact date) | Beginner |
+| [Nyxiontech PDF Tools](https://tools.nyxiontech.com) | Desktop suite of 25 PDF and image tools that edits or strips document metadata and truly redacts text (the redacted page is rasterised with the boxes burnt in, so the hidden text stops existing), and processes everything on the machine without sending the file to any server. | Official Windows installer (per-user or MSI); not code-signed yet, so SmartScreen warns on first run | Yes | AGPL-3.0 | Nov 2026 (v1.1.0) | Beginner |
 
 [↑ Back to top](#table-of-contents)
 
